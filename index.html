@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Page</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Outfit:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1095e75464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="mr-9">
+    <div class="mx-9 my-5">
+      <nav class="mb-14">
+        <img src="../public/assets/images/logo.svg" class="mr-8">
+        <div class="-mt-12">
+        <div class="lg:hidden flex justify-end mt-3">
+          <img src="../public/assets/images/icon-menu.svg" id="menuIcon"  alt="">
+
+        </div>
+          <ul id="menuItems" class=" lg:flex justify-end gap-5 ml-28 w-[82%]">
+            <li><a href="Home" class="text-Darkgrayishblue hover:text-Softred cursor-pointer">Home</a></li>
+            <li><a href="New" class="text-Darkgrayishblue hover:text-Softred cursor-pointer">New</a></li>
+            <li><a href="Popular" class="text-Darkgrayishblue hover:text-Softred cursor-pointer">Popular</a></li>
+            <li><a href="Trending" class="text-Darkgrayishblue hover:text-Softred cursor-pointer">Trending</a></li>
+            <li><a href="Categories" class="text-Darkgrayishblue hover:text-Softred">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const menuIcon = document.getElementById("menuIcon");
+    const menuItems = document.getElementById("menuItems");
+
+    // Initially hide the menu items on small screens
+    menuItems.classList.add("hidden");
+
+    // Toggle the visibility of menu items when the menu icon is clicked
+    menuIcon.addEventListener("click", function() {
+      menuItems.classList.toggle("hidden");
+    });
+  </script>
+    <main class="mx-5">
+      <div class="grid lg:grid-cols-3 sm:grid-cols-1 sm:flex sm:items-center gap-4 ">
+         <div class="col-span-2">
+          <img src="../public/assets/images/image-web-3-desktop.jpg" alt="">
+          <div class="grid lg:grid-cols-2 sm:grid-cols-2 mt-5 gap-4">
+            <p class="lg:text-6xl text-3xl sm:text-9xl sm:text-left md:text-8xl  font-Inter font-extrabold mt-3">The Bright Future of Web 3.0?</p>
+            <div class="lg:ml-8 sm:ml-0 ">
+              <p class="lg:p-8  text-Darkgrayishblue text-center  font-Inter text-[15px]">We dive into the next evolution of the web that claims to put the power of the platform back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button class="text-Offwhite mt-5 px-9 py-3  lg:mx-4 bg-Softred hover:bg-Verydarkblue hover:text-Offwhite cursor-pointer">READ MORE</button>
+            </div>
+          </div>
+         </div>
+         <div class="w-[299px]  bg-Verydarkblue sm:mt-5">
+          <h1 class="font-bold font-Inter text-Softorange text-2xl p-3 ml-3">New</h1>
+          <h2 class="font-Inter font-semibold text-Offwhite p-3 ml-3 hover:text-Softorange cursor-pointer">Hydrogen VS Electric Cars</h2>
+          <p class="text-[15px]  text-Grayishblue p-3 ml-3">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr  class="mx-6">
+          <h2 class="font-Inter font-semibold text-Offwhite p-3 ml-3 hover:text-Softorange cursor-pointer">The Downside of AI Artistry</h2>
+          <p class=" text-Grayishblue p-3 ml-3">What are the possible advese effects of on-demand AI image generation?</p>
+          <hr class="mx-6">
+          <h2 class="font-Inter font-semibold text-Offwhite p-3 ml-3 hover:text-Softorange cursor-pointer">Is VC Funding Drying Up?</h2>
+          <p class="text-Grayishblue p-3 ml-3">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+         
+      </div>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-1 mt-7 mb-6 gap-3 ">
+        <div class="flex gap-3 h-28">
+          <img src="../public/assets/images/image-retro-pcs.jpg" alt="">
+          <div>
+            <a href="#1" class="text-2xl text-Grayishblue font-bold">01</a>
+          <h1 class="text-lg font-bold hover:text-Softred cursor-pointer">Reviving Retro PCs</h1>
+          <p class="text-[15px] text-Darkgrayishblue w-48">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="flex gap-3 h-28">
+          
+          <img src="../public/assets/images/image-top-laptops.jpg" alt="">
+          <div>
+            <a href="#2" class="text-2xl text-Grayishblue font-bold">02</a>
+          <h1 class="text-lg font-bold hover:text-Softred cursor-pointer">Top 10 Laptops of 2022</h1>
+          <p class="text-[15px] text-Darkgrayishblue w-48">Our best picks for various needs and budgets</p>
+          </div>
+        </div>
+        <div class="flex gap-3 h-28">
+          <img src="../public/assets/images/image-gaming-growth.jpg" alt="">
+          <div>
+            <a href="#3" class="text-2xl text-Grayishblue font-bold">03</a>
+            <h1 class="text-lg font-bold hover:text-Softred cursor-pointer">The Growth Of Gaming</h1>
+          <p class="text-[15px]  text-Darkgrayishblue w-48">How the pandemic has sparked fresh opportunities</p>
+          </div>
+        </div>
+       </div>
+    
+  </main>
+</body>
+</html>
